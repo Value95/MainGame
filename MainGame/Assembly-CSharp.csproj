@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{92758d14-1cda-7956-96d0-4483aa3e3ff8}</ProjectGuid>
+    <ProjectGuid>{a72f9347-39a3-c86c-0701-99f04c8279c8}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -327,10 +327,10 @@
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="ReportGeneratorMerged">
-      <HintPath>C:\Users\AD01769994\Desktop\UiAnimatorTool-main\UiAnimatorTool-main\UiAnimatorTool\Library\PackageCache\com.unity.testtools.codecoverage@1.2.5\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+      <HintPath>E:\MainGame\MainGame\Library\PackageCache\com.unity.testtools.codecoverage@1.2.5\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>C:\Users\AD01769994\Desktop\UiAnimatorTool-main\UiAnimatorTool-main\UiAnimatorTool\Library\PackageCache\com.unity.visualscripting@1.9.2\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+      <HintPath>E:\MainGame\MainGame\Library\PackageCache\com.unity.visualscripting@1.9.2\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -714,88 +714,88 @@
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:\Users\AD01769994\Desktop\UiAnimatorTool-main\UiAnimatorTool-main\UiAnimatorTool\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+      <HintPath>E:\MainGame\MainGame\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
-      <HintPath>C:\Users\AD01769994\Desktop\UiAnimatorTool-main\UiAnimatorTool-main\UiAnimatorTool\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
+      <HintPath>E:\MainGame\MainGame\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:\Users\AD01769994\Desktop\UiAnimatorTool-main\UiAnimatorTool-main\UiAnimatorTool\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+      <HintPath>E:\MainGame\MainGame\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.EditorCoroutines.Editor">
-      <HintPath>C:\Users\AD01769994\Desktop\UiAnimatorTool-main\UiAnimatorTool-main\UiAnimatorTool\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+      <HintPath>E:\MainGame\MainGame\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-      <HintPath>C:\Users\AD01769994\Desktop\UiAnimatorTool-main\UiAnimatorTool-main\UiAnimatorTool\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+      <HintPath>E:\MainGame\MainGame\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
-      <HintPath>C:\Users\AD01769994\Desktop\UiAnimatorTool-main\UiAnimatorTool-main\UiAnimatorTool\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
+      <HintPath>E:\MainGame\MainGame\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-      <HintPath>C:\Users\AD01769994\Desktop\UiAnimatorTool-main\UiAnimatorTool-main\UiAnimatorTool\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+      <HintPath>E:\MainGame\MainGame\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
-      <HintPath>C:\Users\AD01769994\Desktop\UiAnimatorTool-main\UiAnimatorTool-main\UiAnimatorTool\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+      <HintPath>E:\MainGame\MainGame\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
     </Reference>
     <Reference Include="UniTask.TextMeshPro">
-      <HintPath>C:\Users\AD01769994\Desktop\UiAnimatorTool-main\UiAnimatorTool-main\UiAnimatorTool\Library\ScriptAssemblies\UniTask.TextMeshPro.dll</HintPath>
+      <HintPath>E:\MainGame\MainGame\Library\ScriptAssemblies\UniTask.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>C:\Users\AD01769994\Desktop\UiAnimatorTool-main\UiAnimatorTool-main\UiAnimatorTool\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+      <HintPath>E:\MainGame\MainGame\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
-      <HintPath>C:\Users\AD01769994\Desktop\UiAnimatorTool-main\UiAnimatorTool-main\UiAnimatorTool\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+      <HintPath>E:\MainGame\MainGame\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:\Users\AD01769994\Desktop\UiAnimatorTool-main\UiAnimatorTool-main\UiAnimatorTool\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>E:\MainGame\MainGame\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UniTask.DOTween">
-      <HintPath>C:\Users\AD01769994\Desktop\UiAnimatorTool-main\UiAnimatorTool-main\UiAnimatorTool\Library\ScriptAssemblies\UniTask.DOTween.dll</HintPath>
+      <HintPath>E:\MainGame\MainGame\Library\ScriptAssemblies\UniTask.DOTween.dll</HintPath>
     </Reference>
     <Reference Include="UniTask.Addressables">
-      <HintPath>C:\Users\AD01769994\Desktop\UiAnimatorTool-main\UiAnimatorTool-main\UiAnimatorTool\Library\ScriptAssemblies\UniTask.Addressables.dll</HintPath>
+      <HintPath>E:\MainGame\MainGame\Library\ScriptAssemblies\UniTask.Addressables.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
-      <HintPath>C:\Users\AD01769994\Desktop\UiAnimatorTool-main\UiAnimatorTool-main\UiAnimatorTool\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+      <HintPath>E:\MainGame\MainGame\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>C:\Users\AD01769994\Desktop\UiAnimatorTool-main\UiAnimatorTool-main\UiAnimatorTool\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+      <HintPath>E:\MainGame\MainGame\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:\Users\AD01769994\Desktop\UiAnimatorTool-main\UiAnimatorTool-main\UiAnimatorTool\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:\MainGame\MainGame\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
-      <HintPath>C:\Users\AD01769994\Desktop\UiAnimatorTool-main\UiAnimatorTool-main\UiAnimatorTool\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+      <HintPath>E:\MainGame\MainGame\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:\Users\AD01769994\Desktop\UiAnimatorTool-main\UiAnimatorTool-main\UiAnimatorTool\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>E:\MainGame\MainGame\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:\Users\AD01769994\Desktop\UiAnimatorTool-main\UiAnimatorTool-main\UiAnimatorTool\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+      <HintPath>E:\MainGame\MainGame\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core.Editor">
-      <HintPath>C:\Users\AD01769994\Desktop\UiAnimatorTool-main\UiAnimatorTool-main\UiAnimatorTool\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
+      <HintPath>E:\MainGame\MainGame\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:\Users\AD01769994\Desktop\UiAnimatorTool-main\UiAnimatorTool-main\UiAnimatorTool\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+      <HintPath>E:\MainGame\MainGame\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UniTask">
-      <HintPath>C:\Users\AD01769994\Desktop\UiAnimatorTool-main\UiAnimatorTool-main\UiAnimatorTool\Library\ScriptAssemblies\UniTask.dll</HintPath>
+      <HintPath>E:\MainGame\MainGame\Library\ScriptAssemblies\UniTask.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
-      <HintPath>C:\Users\AD01769994\Desktop\UiAnimatorTool-main\UiAnimatorTool-main\UiAnimatorTool\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+      <HintPath>E:\MainGame\MainGame\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:\Users\AD01769994\Desktop\UiAnimatorTool-main\UiAnimatorTool-main\UiAnimatorTool\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>E:\MainGame\MainGame\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UniTask.Linq">
-      <HintPath>C:\Users\AD01769994\Desktop\UiAnimatorTool-main\UiAnimatorTool-main\UiAnimatorTool\Library\ScriptAssemblies\UniTask.Linq.dll</HintPath>
+      <HintPath>E:\MainGame\MainGame\Library\ScriptAssemblies\UniTask.Linq.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
-      <HintPath>C:\Users\AD01769994\Desktop\UiAnimatorTool-main\UiAnimatorTool-main\UiAnimatorTool\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+      <HintPath>E:\MainGame\MainGame\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">
-      <HintPath>C:\Users\AD01769994\Desktop\UiAnimatorTool-main\UiAnimatorTool-main\UiAnimatorTool\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+      <HintPath>E:\MainGame\MainGame\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
