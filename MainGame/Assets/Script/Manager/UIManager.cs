@@ -109,7 +109,7 @@ public class UIManager : BaseManager
         window.AnimTrigger("Out", () =>
         {
             window.CloseAnim();
-        });
+        }).Forget();
     }
 
     public void ClosePopup()
@@ -126,6 +126,6 @@ public class UIManager : BaseManager
         popup.AnimTrigger("Out", () =>
         {
             popup.CloseAnim();
-        });
+        }).Forget();
     }
 }

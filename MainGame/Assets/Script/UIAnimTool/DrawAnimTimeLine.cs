@@ -100,15 +100,15 @@ public class DrawAnimTimeLine : EditorWindow
 
         float lLoopCount = drawTime + nextSell;
         int lDrawCount = 0;
-        
+
         // TimeLine Draw
         for (var i = 0.0f; i <= lLoopCount; i += nextSell)
         {
             float lXpos = TimeLineValueToPosition((i / drawTime) - lStartTime);
-            
+
             Vector3 lStartVector = new Vector3(lXpos, timeLineRect.y, 0);
             Vector3 lEndVector = new Vector3(lXpos, windowRect.height, 0);
-
+            
             if (lXpos >= timeLineRect.x)
             {
                 Handles.DrawAAPolyLine(lStartVector, lEndVector);
@@ -126,13 +126,15 @@ public class DrawAnimTimeLine : EditorWindow
                 }
 
                 float lDrawNumber = (int)((lLoopCount * 10) / 20);
-                if(lDrawNumber == 0 || lDrawTime == 0 || 0 == lDrawCount % lDrawNumber)
-                    BasicDraw.DrawText(new Rect(lStartVector.x - 10, lStartVector.y - 20, 30, 20), lDrawTime, "0.00");   
-                
+                if (lDrawNumber == 0 || lDrawTime == 0 || 0 == lDrawCount % lDrawNumber)
+                {
+                    BasicDraw.DrawText(new Rect(lStartVector.x - 10, lStartVector.y - 20, 30, 20), (float)(Math.Floor(lDrawTime * 10f) / 10f), "0.00");
+                }
+
             }
 
-            lDrawCount++;
             lDrawTime += 0.1f;
+            lDrawCount++;
         }
 
         // Sub TimeLine Draw

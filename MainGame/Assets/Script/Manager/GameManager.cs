@@ -22,9 +22,6 @@ public class GameManager : BaseManager
                GameObject go = new GameObject("GameManager");
                _instance = go.AddComponent<GameManager>();
             }
-
-            // 씬 전환 시 파괴되지 않도록 설정
-            DontDestroyOnLoad(_instance.gameObject);
          }
 
          return _instance;
@@ -58,4 +55,9 @@ public class GameManager : BaseManager
    {      
    }
 
+
+   private void LoadAddresable()
+   {
+      
+   }
 }

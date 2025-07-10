@@ -27,21 +27,5 @@ public abstract class BaseUI : MonoBehaviour
         {
             eCallBack?.Invoke();
         });
-        
-        // // 애니메이션이 전환될 때까지 대기
-        // while (!stateInfo.IsName(eTriggerName))
-        // {
-        //     await UniTask.Yield();
-        //     stateInfo = anim.GetCurrentAnimatorStateInfo(0);
-        // }
-        //
-        // // 애니메이션이 재생되는 동안 대기
-        // while (stateInfo.normalizedTime < 1.0f)
-        // {
-        //     await UniTask.Yield();
-        //     stateInfo = anim.GetCurrentAnimatorStateInfo(0);
-        // }
-        //
-        // eCallBack?.Invoke();
     }
 }
