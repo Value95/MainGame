@@ -1,0 +1,12 @@
+// This file is generated. Do not modify by hand.
+// XML documentation file not found. To check if public methods have XML comments,
+// make sure the XML doc file is present and located next to the scraped dll
+namespace Unity.Services.Matchmaker.Authoring.Core.Model
+{
+    public class ErrorResponse
+    {
+        [System.Runtime.Serialization.DataMember(IsRequired = true)] public string Message { get; set; }
+        [System.Runtime.Serialization.DataMember(IsRequired = true)] public string ResultCode { get; set; }
+        public ErrorResponse() {}
+    }
+}

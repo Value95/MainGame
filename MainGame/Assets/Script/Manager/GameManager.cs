@@ -34,6 +34,7 @@ public class GameManager : BaseManager
       SceneManager.Instance.Prepare();
       UIManager.Instance.Prepare();
       TableManager.Instance.Prepare();
+      NetworkManager.Instance.Prepare();
    }
 
    private void Start()
@@ -42,7 +43,8 @@ public class GameManager : BaseManager
       SceneManager.Instance.Run();
       UIManager.Instance.Run();
       TableManager.Instance.Run();
-
+      NetworkManager.Instance.Run();
+      
       var data = TableManager.Instance.GetTable<CharacterTable>().GetData(50);
       DebugEx.Log(data.ID);
    }

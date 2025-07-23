@@ -1,0 +1,24 @@
+{
+    "name": "Unity.Services.Matchmaker",
+    "rootNamespace": "",
+    "references": [
+        "Unity.Services.Core",
+        "Unity.Services.Core.Internal",
+        "Unity.Services.Analytics"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.services.analytics",
+            "expression": "",
+            "define": "UGS_MATCHMAKER_ANALYTICS"
+        }
+    ],
+    "noEngineReferences": false
+}

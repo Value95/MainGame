@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using UnityEditor;
 using UnityEngine;
 
@@ -65,3 +66,4 @@ public class TestDataEditor : UnityEditor.Editor
             _uiAnimTimeLineWindow.DataRefresh();
     }
 }
+#endif

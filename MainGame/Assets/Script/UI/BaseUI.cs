@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 
@@ -8,7 +6,7 @@ public abstract class BaseUI : MonoBehaviour
 {
     [SerializeField] private Animator anim;
 
-    [SerializeField] private UiAnimator uiAnim;
+    //[SerializeField] private UiAnimator uiAnim;
     
     public abstract string Path();
     public abstract void Open(object[] param); //
@@ -23,9 +21,9 @@ public abstract class BaseUI : MonoBehaviour
 
         AnimatorStateInfo stateInfo = anim.GetCurrentAnimatorStateInfo(0);
 
-        uiAnim.ChanageState(UIAnimTimeLineWindow.AnimState.Playing, (isBool) =>
-        {
-            eCallBack?.Invoke();
-        });
+        // uiAnim.ChanageState(UIAnimTimeLineWindow.AnimState.Playing, (isBool) =>
+        // {
+        //     eCallBack?.Invoke();
+        // });
     }
 }

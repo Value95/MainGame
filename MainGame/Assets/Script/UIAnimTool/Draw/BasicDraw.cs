@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using UnityEditor;
 using UnityEngine;
 
@@ -85,3 +86,4 @@ public static class BasicDraw
         EditorGUI.MinMaxSlider(pRect, ref pMinValue, ref pMaxValue, pMinLimit, pMaxLimit);
     }
 }
+#endif

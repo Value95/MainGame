@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using UnityEditor;
 using UnityEngine;
 
@@ -27,3 +28,4 @@ public class EditorDeltaTime
         return Application.isPlaying ? Time.deltaTime : _customDeltaTime;
     }
 }
+#endif

@@ -833,7 +833,9 @@ PlayerSettings:
   webGLMemoryGeometricGrowthStep: 0.2
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Server: FISHNET;FISHNET_V4
+    Standalone: FISHNET;FISHNET_V4
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
@@ -942,11 +944,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 95c4c1d2-c336-4501-ac44-9c5817ec9e43
+  cloudProjectId: 74c54b5e-b55f-4ad6-b986-3e94ee560162
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: UiAnimatorTool
-  organizationId: guesty_unity929
+  projectName: New Unity Project
+  organizationId: selgit
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}

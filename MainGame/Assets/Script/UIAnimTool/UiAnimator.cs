@@ -1,4 +1,4 @@
-
+#if UNITY_EDITOR
 using System;
 using System.Collections.Generic;
 using UnityEditor;
@@ -342,3 +342,4 @@ public class AnimatorClipGroup
         return null;
     }
 }
+#endif

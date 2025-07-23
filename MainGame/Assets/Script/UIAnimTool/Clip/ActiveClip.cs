@@ -1,4 +1,4 @@
-
+#if UNITY_EDITOR
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
@@ -33,3 +33,4 @@ public class ActiveClip : Clip
         pObj.SetActive(!isActive);
     }
 }
+#endif
