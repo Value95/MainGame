@@ -4,39 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 
-public class TableManager : BaseManager
+public class TableManager : BaseManager<TableManager>
 {
-    private static TableManager _instance;
-
-    public static TableManager Instance
-    {
-        get
-        {
-            if (_instance == null)
-            {
-                // 씬에 있는 GameManager 찾기
-                _instance = FindObjectOfType<TableManager>();
-
-                // 없으면 새로 생성
-                if (_instance == null)
-                {
-                    GameObject go = new GameObject("TableManager");
-                    _instance = go.AddComponent<TableManager>();
-                }
-
-                // 씬 전환 시 파괴되지 않도록 설정
-                DontDestroyOnLoad(_instance.gameObject);
-            }
-
-            return _instance;
-        }
-    }
-
-    private Dictionary<Type, object> _tableDic;
+    private Dictionary<Type, ITableData> _tableDic;
     
     public override void Prepare()
     {
-        _tableDic = new Dictionary<Type,object>();
+        _tableDic = new Dictionary<Type,ITableData>();
     }
 
     public override void Run()
@@ -44,7 +18,7 @@ public class TableManager : BaseManager
         _TableLoad();
     }
 
-    public void SetTableDic(Type eType, object eParam)
+    public void SetTableDic(Type eType, ITableData eParam)
     {
         if (!_tableDic.TryAdd(eType, eParam))
         {

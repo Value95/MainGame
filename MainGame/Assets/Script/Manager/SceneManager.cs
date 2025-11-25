@@ -4,31 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class SceneManager : BaseManager
+public class SceneManager : BaseManager<SceneManager>
 {
-    private static SceneManager _instance;
-
-    public static SceneManager Instance
-    {
-        get
-        {
-            if (_instance == null)
-            {
-                // 씬에 있는 SceneManager 찾기
-                _instance = FindObjectOfType<SceneManager>();
-
-                // 없으면 새로 생성
-                if (_instance == null)
-                {
-                    GameObject go = new GameObject("SceneManager");
-                    _instance = go.AddComponent<SceneManager>();
-                }
-            }
-
-            return _instance;
-        }
-    }
-
     public Scene loadScene { get; private set; } 
     private bool _isLoadingScene = false;
     
@@ -53,7 +30,7 @@ public class SceneManager : BaseManager
         _isLoadingScene = true;
 
         AsyncOperation asyncLoad = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(eSceneName);
-        while (!asyncLoad.isDone)
+        while (asyncLoad is { isDone: false })
         {
             await UniTask.Yield(); // 프레임마다 대기
         }

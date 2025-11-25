@@ -8,7 +8,7 @@ public abstract class BaseUI : MonoBehaviour
 
     //[SerializeField] private UiAnimator uiAnim;
     
-    public abstract string Path();
+    public abstract string Path { get; }
     public abstract void Open(object[] param); //
     public abstract void Refresh();
     public abstract void Close();

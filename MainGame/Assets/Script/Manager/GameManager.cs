@@ -3,31 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : BaseManager
+public class GameManager : BaseManager<GameManager>
 {
-   private static GameManager _instance;
-
-   public static GameManager Instance
-   {
-      get
-      {
-         if (_instance == null)
-         {
-            // 씬에 있는 GameManager 찾기
-            _instance = FindObjectOfType<GameManager>();
-
-            // 없으면 새로 생성
-            if (_instance == null)
-            {
-               GameObject go = new GameObject("GameManager");
-               _instance = go.AddComponent<GameManager>();
-            }
-         }
-
-         return _instance;
-      }
-   }
-
+   
    private void Awake()
    {
       GameManager.Instance.Prepare();

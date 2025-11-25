@@ -1,131 +1,261 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class UIManager : BaseManager
+public class UIManager : BaseManager<UIManager>
 {
-    private static UIManager instance;
+      [SerializeField] private GameObject windowParent;
+        [SerializeField] private GameObject popupParent;
 
-    public static UIManager Instance
-    {
-        get
+        // 현재 까지 열린 ui
+        private Dictionary<string, BaseUI> _windowPool = new Dictionary<string, BaseUI>();
+        private Dictionary<string, BaseUI> _popupPool = new Dictionary<string, BaseUI>();
+        private Dictionary<string, BaseUI> _toastMessagePool = new Dictionary<string, BaseUI>();
+
+        // 현재 열려있는 ui
+        private Queue<BaseUI> _windowOpenHistory;
+        public Queue<BaseUI> WindowOpenHistory => _windowOpenHistory;
+        private Queue<BaseUI> _popupOpenHistory;
+        public Queue<BaseUI> PopupOpenHistory => _popupOpenHistory;
+        private BaseUI toastMessage;
+
+        private Stack<BaseUI> _windowCloseHistory;
+
+        public override void Prepare()
         {
-            if (instance == null)
+        }
+
+        public override void Run()
+        {
+            _windowOpenHistory = new Queue<BaseUI>();
+            _popupOpenHistory = new Queue<BaseUI>();
+            _windowCloseHistory = new Stack<BaseUI>();
+        }
+
+        public T GetWindow<T>() where T : BaseUI
+        {
+            foreach (var window in _windowOpenHistory)
             {
-                // 씬에 있는 GameManager 찾기
-                instance = FindObjectOfType<UIManager>();
-
-                // 없으면 새로 생성
-                if (instance == null)
-                {
-                    GameObject go = new GameObject("UIManager");
-                    instance = go.AddComponent<UIManager>();
-                }
-
-                // 씬 전환 시 파괴되지 않도록 설정
-                DontDestroyOnLoad(instance.gameObject);
+                var w = window as T;
+                if (w != null)
+                    return w;
             }
 
-            return instance;
+            return null;
         }
-    }
 
-    [SerializeField] 
-    private GameObject windowParent;
-    [SerializeField] 
-    private GameObject popupParent;
-    
-    private Queue<BaseUI> _windowHistory;
-    private Queue<BaseUI> _popupHistory;
-    
-    public override void Prepare()
-    {
-    }
-    
-    public override void Run()
-    {
-        _windowHistory = new Queue<BaseUI>();
-        _popupHistory = new Queue<BaseUI>();
-    }
-    
-    public BaseUI ShowWindow<T>(object[] eParam = null) where T : BaseUI, new()
-    {
-        T window = new T();
-        GameObject windowPrefab = Resources.Load<GameObject>(window.Path());
-        GameObject.Instantiate(windowPrefab, windowParent.transform);
+        #region Window
 
-        _BaseUiOpen<T>(windowPrefab, eParam);
+        public BaseUI ShowWindow<T>(params object[] eParam) where T : BaseUI, new()
+        {
+            var window = _ShowWindow<T>(eParam);
+
+            return window as T;
+        }
+
+        private async UniTask<BaseUI> _ShowWindow<T>(params object[] eParam) where T : BaseUI, new()
+        {
+            await _OpenWindowClose();
+
+            var path = new T().Path;
+            T baseUI;
+
+            if (_windowPool.TryGetValue(path, out var window))
+            {
+                baseUI = window as T;
+            }
+            else
+            {
+                GameObject prefab = Resources.Load<GameObject>(path);
+                var instanceWindow = GameObject.Instantiate(prefab, windowParent.transform);
+                baseUI = instanceWindow.GetComponent<T>();
+                _windowPool.Add(path, baseUI);
+            }
+
+            if (!baseUI)
+                return null;
+
+            _BaseUiOpen<T>(baseUI, eParam);
+
+            _windowOpenHistory.Enqueue(baseUI);
+            return baseUI;
+        }
         
-        _windowHistory.Enqueue(window);
-        return window;
-    }
+        public void CloseWindow()
+        {
+            if (!_windowOpenHistory.TryDequeue(out var window))
+            {
+                return;
+            }
 
-    public BaseUI ShowPopup<T>(object[] eParam = null) where T : BaseUI, new()
-    {
-        T popup = new T();
-        GameObject windowPrefab = Resources.Load<GameObject>(popup.Path());
-        GameObject.Instantiate(windowPrefab, popupParent.transform);
+            if (!window)
+            {
+                DebugEx.Log("window is Null");
+                return;
+            }
 
-        _BaseUiOpen<T>(windowPrefab, eParam);
+            window.Close();
+            window.AnimTrigger("Out", () =>
+            {
+                window.CloseAnim();
+                window.gameObject.SafeSetActive(false);
+                _CloseWindowOpen();
+            }).Forget();
+        }
+
+        // 윈도우를 열때 열려있는 윈도우가있다면 닫는다.
+        private Task _OpenWindowClose()
+        {
+            if (!_windowOpenHistory.TryDequeue(out var window))
+            {
+                return Task.CompletedTask;
+            }
+
+            _windowCloseHistory.Push(window);
+            window.AnimTrigger("Out", () => { window.gameObject.SafeSetActive(false); }).Forget();
+            return Task.CompletedTask;
+        }
+
+        // 윈도우를 닫을때 이전에 열려있던 윈도우가 있다면 열어준다.
+        private void _CloseWindowOpen()
+        {
+            if (_windowCloseHistory.Count >= 1)
+                return;
+
+            if (!_windowCloseHistory.TryPop(out var window))
+            {
+                return;
+            }
+
+            window.AnimTrigger("In", () => { window.gameObject.SafeSetActive(true); }).Forget();
+        }
         
-        _popupHistory.Enqueue(popup);
-        return popup;
-    }
+        #endregion
 
-    private void _BaseUiOpen<T>(GameObject eUI, object[] eParam) where T : BaseUI, new()
-    {
-        if (eUI == null)
+        #region Popup
+
+        public BaseUI ShowPopup<T>(params object[] eParam) where T : BaseUI, new()
         {
-            Debug.Log("eUI is Null");
-            return;
+            var path = new T().Path;
+            T baseUI;
+            if (_popupPool.TryGetValue(path, out var popup))
+            {
+                baseUI = popup as T;
+            }
+            else
+            {
+                GameObject windowPrefab = Resources.Load<GameObject>(path);
+                var instancePopup = GameObject.Instantiate(windowPrefab, popupParent.transform);
+                baseUI = instancePopup.GetComponent<T>();
+                _popupPool.Add(path, baseUI);
+            }
+
+            if (baseUI == null)
+                return null;
+
+            _BaseUiOpen<T>(baseUI, eParam);
+
+            _popupOpenHistory.Enqueue(baseUI);
+            return baseUI;
         }
-        T ui = eUI.GetComponent<T>();
+
+        public void ShowYesNoPopup(string pTitle, string pDocument,
+            Action pYesCallBack = null, Action pNoCallBack = null)
+        {
+            var popup = ShowPopup<DefaultPopup>();
+            (popup as DefaultPopup)?.ShowYesNo(pTitle, pDocument, pYesCallBack, pNoCallBack);
+        }
+
+        public void ShowYsePopup(string pTitle, string pDocument,
+            Action pYesCallBack = null)
+        {
+            var popup = ShowPopup<DefaultPopup>();
+            (popup as DefaultPopup)?.ShowYes(pTitle, pDocument, pYesCallBack);
+        }
+
+        public void ShowCancelPopup(string pTitle, string pDocument,
+            Action pCancelCallBack = null)
+        {
+            var popup = ShowPopup<DefaultPopup>();
+            (popup as DefaultPopup)?.ShowCancel(pTitle, pDocument, pCancelCallBack);
+        }
         
-        if (ui == null)
+        public void ClosePopup()
         {
-            Debug.Log("window is Null");
-            return;
+            if (!_popupOpenHistory.TryDequeue(out var popup))
+            {
+                return;
+            }
+
+            if (popup == null)
+            {
+                DebugEx.Log("popup is Null");
+                return;
+            }
+
+            popup.Close();
+            popup.AnimTrigger("Out", () =>
+            {
+                popup.CloseAnim();
+                popup.gameObject.SafeSetActive(false);
+            }).Forget();
         }
 
-        ui.AnimTrigger("In", () =>
-        {
-            ui.Open(eParam);
-        }).Forget();
-    }
+        #endregion
 
-    public void CloseWindow()
-    {
-        BaseUI window = _windowHistory.Dequeue();
+        #region ToastMessage
 
-        if (window == null)
+        public BaseUI ShowToastMessage<T>(string pMessage)where T : BaseUI, new()
         {
-            Debug.Log("window is Null");
-            return;
+            var path = new T().Path;
+            T baseUI;
+            if (_toastMessagePool.TryGetValue(path, out var popup))
+            {
+                baseUI = popup as T;
+            }
+            else
+            {
+                GameObject windowPrefab = Resources.Load<GameObject>(path);
+                var instancePopup = GameObject.Instantiate(windowPrefab, popupParent.transform);
+                baseUI = instancePopup.GetComponent<T>();
+                _popupPool.Add(path, baseUI);
+            }
+
+            if (baseUI == null)
+                return null;
+
+            _BaseUiOpen<T>(baseUI, new []{pMessage});
+
+            toastMessage = baseUI;
+            return baseUI;   
         }
 
-        window.Close();    
-        window.AnimTrigger("Out", () =>
+        public void CloseToastMessage()
         {
-            window.CloseAnim();
-        }).Forget();
-    }
-
-    public void ClosePopup()
-    {
-        BaseUI popup = _popupHistory.Dequeue();
-
-        if (popup == null)
-        {
-            Debug.Log("window is Null");
-            return;
+            toastMessage.Close();
+            toastMessage.AnimTrigger("Out", () =>
+            {
+                toastMessage.CloseAnim();
+                toastMessage.gameObject.SafeSetActive(false);
+            }).Forget();
         }
+        
+        #endregion
+      
 
-        popup.Close();    
-        popup.AnimTrigger("Out", () =>
+        private void _BaseUiOpen<T>(T eUI, object[] eParam) where T : BaseUI, new()
         {
-            popup.CloseAnim();
-        }).Forget();
-    }
+            if (!eUI)
+            {
+                DebugEx.Log("eUI is Null");
+                return;
+            }
+
+            eUI.gameObject.SetActive(true);
+            eUI.AnimTrigger("In", () => { eUI.Open(eParam); }).Forget();
+        }
 }
