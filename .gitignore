@@ -1,6 +1,6 @@
-# ================================
-# Unity project - track ONLY Assets
-# ================================
+# ============================================
+# Unity project - track Assets + ProjectSettings + Packages
+# ============================================
 
 # Ignore everything by default
 *
@@ -8,9 +8,19 @@
 # Allow gitignore itself
 !.gitignore
 
-# Allow Assets folder and all its contents (including .meta files)
+# --------------------
+# Allow Unity essentials
+# --------------------
+
+# Assets (including meta files)
 !Assets/
 !Assets/**
-
-# Allow the Assets folder meta (exists at project root)
 !Assets.meta
+
+# ProjectSettings
+!ProjectSettings/
+!ProjectSettings/**
+
+# Packages (manifest.json, packages-lock.json)
+!Packages/
+!Packages/**
