@@ -109,7 +109,6 @@
 -define:ENABLE_UNITY_COLLECTIONS_CHECKS
 -define:ENABLE_BURST_AOT
 -define:UNITY_TEAM_LICENSE
--define:UNITY_PRO_LICENSE
 -define:ENABLE_CUSTOM_RENDER_TEXTURE
 -define:ENABLE_DIRECTOR
 -define:ENABLE_LOCALIZATION
@@ -123,7 +122,6 @@
 -define:FISHNET_V4
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
--r:"Assets/FishNet/Runtime/Plugins/CodeAnalysis/FishNet.CodeAnalysis.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/Managed/UnityEngine/UnityEditor.DiagnosticsModule.dll"
@@ -333,10 +331,6 @@
 -r:"Library/PackageCache/com.unity.services.wire@1.2.5/Plugins/websocket-sharp.dll"
 -r:"Library/PackageCache/com.unity.testtools.codecoverage@1.2.5/lib/ReportGenerator/ReportGeneratorMerged.dll"
 -r:"Library/PackageCache/com.unity.visualscripting@1.9.2/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
--r:"Library/Bee/artifacts/1900b0aE.dag/FishNet.Codegen.Cecil.ref.dll"
--r:"Library/Bee/artifacts/1900b0aE.dag/FishNet.Demos.ref.dll"
--r:"Library/Bee/artifacts/1900b0aE.dag/FishNet.Runtime.ref.dll"
--r:"Library/Bee/artifacts/1900b0aE.dag/GameKit.Dependencies.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UniTask.Addressables.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UniTask.DOTween.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UniTask.Linq.ref.dll"
@@ -379,15 +373,10 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
--analyzer:"Assets/FishNet/Runtime/Plugins/CodeAnalysis/FishNet.CodeAnalysis.Analyzers.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
-"Assets/FishNet/Upgrading/EdgegapMenu.cs"
-"Assets/FishNet/Upgrading/MirrorUpgrade.cs"
-"Assets/FishNet/Upgrading/UpgradeFromMirrorMenu.cs"
 "Assets/JSON/JSONObject.cs"
 "Assets/JSON/VectorTemplates.cs"
-"Assets/PlayerControllerTest.cs"
 "Assets/Script/DataTable/CharacterTable.cs"
 "Assets/Script/DataTable/Data/BaseData.cs"
 "Assets/Script/DataTable/InitializationTable.cs"
@@ -403,18 +392,9 @@
 "Assets/Script/Manager/TableManager.cs"
 "Assets/Script/Manager/UIManager.cs"
 "Assets/Script/UI/BaseUI.cs"
+"Assets/Script/UI/Popup/DefaultPopup/DefaultPopup.cs"
+"Assets/Script/UI/ToastMessage/ToastMessage.cs"
 "Assets/Script/UI/Window/TestWindow/TestUI.cs"
-"Assets/Script/UIAnimTool/Clip/ActiveClip.cs"
-"Assets/Script/UIAnimTool/Clip/Clip.cs"
-"Assets/Script/UIAnimTool/Clip/PositionClip.cs"
-"Assets/Script/UIAnimTool/Clip/RotationClip.cs"
-"Assets/Script/UIAnimTool/Clip/ScaleClip.cs"
-"Assets/Script/UIAnimTool/DeltaTime.cs"
-"Assets/Script/UIAnimTool/Draw/BasicDraw.cs"
-"Assets/Script/UIAnimTool/DrawAnimTimeLine.cs"
-"Assets/Script/UIAnimTool/UiAnimator.cs"
-"Assets/Script/UIAnimTool/UiAnimatorEditor.cs"
-"Assets/Script/UIAnimTool/UIAnimTimeLineWindow.cs"
 "Assets/Script/UnityUtil/CustomButton.cs"
 "Assets/Script/UnityUtil/CustomInput.cs"
 "Assets/Script/UnityUtil/CustomScrollView.cs"
@@ -422,6 +402,7 @@
 "Assets/Script/UnityUtil/CustomToggleGroup.cs"
 "Assets/Script/Util/DebugEx.cs"
 "Assets/Script/Util/DefineUtil.cs"
+"Assets/Script/Util/GameObjectExtensions.cs"
 "Assets/Script/Util/UiUtil.cs"
 -langversion:9.0
 

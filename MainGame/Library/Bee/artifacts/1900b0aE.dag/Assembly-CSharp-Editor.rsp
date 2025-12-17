@@ -106,7 +106,6 @@
 -define:ENABLE_UNITY_COLLECTIONS_CHECKS
 -define:ENABLE_BURST_AOT
 -define:UNITY_TEAM_LICENSE
--define:UNITY_PRO_LICENSE
 -define:ENABLE_CUSTOM_RENDER_TEXTURE
 -define:ENABLE_DIRECTOR
 -define:ENABLE_LOCALIZATION
@@ -121,7 +120,6 @@
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -define:UNITY_EDITOR_ONLY_COMPILATION
--r:"Assets/FishNet/Runtime/Plugins/CodeAnalysis/FishNet.CodeAnalysis.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
@@ -347,10 +345,6 @@
 -r:"Library/PackageCache/com.unity.visualscripting@1.9.2/Editor/VisualScripting.Core/EditorAssetResources/Unity.VisualScripting.TextureAssets.dll"
 -r:"Library/PackageCache/com.unity.visualscripting@1.9.2/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.ref.dll"
--r:"Library/Bee/artifacts/1900b0aE.dag/FishNet.Codegen.Cecil.ref.dll"
--r:"Library/Bee/artifacts/1900b0aE.dag/FishNet.Demos.ref.dll"
--r:"Library/Bee/artifacts/1900b0aE.dag/FishNet.Runtime.ref.dll"
--r:"Library/Bee/artifacts/1900b0aE.dag/GameKit.Dependencies.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UniTask.Addressables.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UniTask.DOTween.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UniTask.Linq.ref.dll"
@@ -395,7 +389,6 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.TestRunner.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
--analyzer:"Assets/FishNet/Runtime/Plugins/CodeAnalysis/FishNet.CodeAnalysis.Analyzers.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/JSON/Editor/JSONChecker.cs"

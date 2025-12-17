@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2022.3/staging' branch; Version is '2022.3.24f1 (334eb2a0b267) revision 3362482'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.26100) 64bit Enterprise' Language: 'ko' Physical Memory: 65294 MB
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ko' Physical Memory: 32712 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-E:/Git/MainGame/MainGame
+C:/UnityProject/HighCore/MainGame
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51484
-Successfully changed project path to: E:/Git/MainGame/MainGame
-E:/Git/MainGame/MainGame
+62377
+Successfully changed project path to: C:/UnityProject/HighCore/MainGame
+C:/UnityProject/HighCore/MainGame
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,214 +49,680 @@ E:/Git/MainGame/MainGame
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [38480] Host "[IP] 172.20.17.207 [Port] 0 [Flags] 2 [Guid] 3594239136 [EditorId] 3594239136 [Version] 1048832 [Id] WindowsEditor(7,ehddlf-D01) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [15604] Host "[IP] 172.30.1.93 [Port] 0 [Flags] 2 [Guid] 910401429 [EditorId] 910401429 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-3K1RF2H) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [38480] Host "[IP] 172.20.17.207 [Port] 0 [Flags] 2 [Guid] 3594239136 [EditorId] 3594239136 [Version] 1048832 [Id] WindowsEditor(7,ehddlf-D01) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [15604] Host "[IP] 172.30.1.93 [Port] 0 [Flags] 2 [Guid] 910401429 [EditorId] 910401429 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-3K1RF2H) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-[Physics::Module] Initialized MultithreadedJobDispatcher with 19 workers.
-Refreshing native plugins compatible for Editor in 18.74 ms, found 3 plugins.
+[Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
+Refreshing native plugins compatible for Editor in 15.90 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.24f1 (334eb2a0b267)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path E:/Git/MainGame/MainGame/Assets
+[Subsystems] Discovering subsystems at path C:/UnityProject/HighCore/MainGame/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 2080 Ti (ID=0x1e07)
-    Vendor:   NVIDIA
-    VRAM:     11027 MB
-    Driver:   32.0.15.6094
+    Renderer: AMD Radeon RX 7800 XT (ID=0x747e)
+    Vendor:   ATI
+    VRAM:     16368 MB
+    Driver:   32.0.22029.9039
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56504
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56716
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.008143 seconds.
-- Loaded All Assemblies, in  0.317 seconds
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.012723 seconds.
+- Loaded All Assemblies, in  0.333 seconds
+Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.235 seconds
-Domain Reload Profiling: 548ms
-	BeginReloadAssembly (105ms)
+- Finished resetting the current domain, in  0.250 seconds
+Domain Reload Profiling: 581ms
+	BeginReloadAssembly (113ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (25ms)
-	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (53ms)
-	LoadAllAssembliesAndSetupDomain (123ms)
-		LoadAssemblies (103ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (60ms)
+	LoadAllAssembliesAndSetupDomain (122ms)
+		LoadAssemblies (111ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (119ms)
-			TypeCache.Refresh (118ms)
+		AnalyzeDomain (120ms)
+			TypeCache.Refresh (119ms)
 				TypeCache.ScanAssembly (106ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (235ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (250ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (179ms)
+		SetupLoadedEditorAssemblies (205ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (8ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (121ms)
-			ProcessInitializeOnLoadMethodAttributes (38ms)
+			ProcessInitializeOnLoadAttributes (136ms)
+			ProcessInitializeOnLoadMethodAttributes (43ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
-Assertion failed on expression: 'IsFileCreated(assemblyPath)'
-Assertion failed on expression: 'IsFileCreated(assemblyPath)'
-Compilation Pipeline: Could not read file Assets/FishNet/CodeGenerating/cecil-0.11.4/MonoFN.Cecil.asmdef
-Fatal Error! Compilation Pipeline: Could not read file Assets/FishNet/CodeGenerating/cecil-0.11.4/MonoFN.Cecil.asmdef
-Crash!!!
-SymInit: Symbol-SearchPath: 'C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/Mono;.;E:\Git\MainGame\MainGame;E:\Git\MainGame\MainGame\Library\BurstCache\JIT;C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor;C:\WINDOWS;C:\WINDOWS\system32;', symOptions: 534, UserName: 'ehddlf'
-OS-Version: 10.0.0
-C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\Unity.exe:Unity.exe (00007FF75DDF0000), size: 82464768 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2022.3.24.20146
-C:\WINDOWS\SYSTEM32\ntdll.dll:ntdll.dll (00007FFFFAAC0000), size: 2523136 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6899
-C:\WINDOWS\System32\KERNEL32.DLL:KERNEL32.DLL (00007FFFFA720000), size: 823296 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6725
-C:\WINDOWS\System32\KERNELBASE.dll:KERNELBASE.dll (00007FFFF81F0000), size: 4136960 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6899
-C:\WINDOWS\System32\CRYPT32.dll:CRYPT32.dll (00007FFFF7ED0000), size: 1536000 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.5074
-C:\WINDOWS\System32\ucrtbase.dll:ucrtbase.dll (00007FFFF7C50000), size: 1355776 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6899
-C:\WINDOWS\System32\USER32.dll:USER32.dll (00007FFFF9700000), size: 1855488 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6725
-C:\WINDOWS\System32\win32u.dll:win32u.dll (00007FFFF81C0000), size: 159744 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6899
-C:\WINDOWS\System32\GDI32.dll:GDI32.dll (00007FFFFA930000), size: 176128 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6725
-C:\WINDOWS\System32\gdi32full.dll:gdi32full.dll (00007FFFF7DA0000), size: 1232896 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6899
-C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\libfbxsdk.dll:libfbxsdk.dll (00007FFF0B420000), size: 10063872 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2020.3.4.0
-C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\s3tcompress.dll:s3tcompress.dll (00007FFFD1CD0000), size: 180224 (result: 0), SymType: '-deferred-', PDB: ''
-C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\etccompress.dll:etccompress.dll (00007FFF1F650000), size: 5066752 (result: 0), SymType: '-deferred-', PDB: ''
-C:\WINDOWS\System32\msvcp_win.dll:msvcp_win.dll (00007FFFF86B0000), size: 667648 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6899
-C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\ispc_texcomp.dll:ispc_texcomp.dll (00007FFF39BC0000), size: 1826816 (result: 0), SymType: '-deferred-', PDB: ''
-C:\WINDOWS\System32\ADVAPI32.dll:ADVAPI32.dll (00007FFFF93F0000), size: 737280 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6725
-C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\compress_bc7e.dll:compress_bc7e.dll (00007FFF39390000), size: 1433600 (result: 0), SymType: '-deferred-', PDB: ''
-C:\WINDOWS\System32\msvcrt.dll:msvcrt.dll (00007FFFFA880000), size: 692224 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 7.0.26100.6899
-C:\WINDOWS\System32\sechost.dll:sechost.dll (00007FFFFA150000), size: 679936 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6899
-C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\FreeImage.dll:FreeImage.dll (0000000180000000), size: 6582272 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 3.18.0.0
-C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\WinPixEventRuntime.dll:WinPixEventRuntime.dll (00007FFFD29F0000), size: 45056 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.0.1812.6001
-C:\WINDOWS\System32\RPCRT4.dll:RPCRT4.dll (00007FFFFA960000), size: 1146880 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6899
-C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\umbraoptimizer64.dll:umbraoptimizer64.dll (00007FFF5EFF0000), size: 1187840 (result: 0), SymType: '-deferred-', PDB: ''
-C:\WINDOWS\System32\SHELL32.dll:SHELL32.dll (00007FFFF9950000), size: 7655424 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6899
-C:\WINDOWS\System32\WS2_32.dll:WS2_32.dll (00007FFFFA7F0000), size: 475136 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6899
-C:\WINDOWS\System32\wintypes.dll:wintypes.dll (00007FFFF8050000), size: 1486848 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6899
-C:\WINDOWS\SYSTEM32\VCRUNTIME140.dll:VCRUNTIME140.dll (00007FFFC91F0000), size: 122880 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.44.35211.0
-C:\WINDOWS\SYSTEM32\MSVCP140.dll:MSVCP140.dll (00007FFFC9160000), size: 561152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.44.35211.0
-C:\WINDOWS\System32\combase.dll:combase.dll (00007FFFF9070000), size: 3649536 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6899
-C:\WINDOWS\System32\SHLWAPI.dll:SHLWAPI.dll (00007FFFFA0B0000), size: 401408 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6725
-C:\WINDOWS\SYSTEM32\VCRUNTIME140_1.dll:VCRUNTIME140_1.dll (00007FFFEC5D0000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.44.35211.0
-C:\WINDOWS\System32\ole32.dll:ole32.dll (00007FFFF8ED0000), size: 1671168 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6725
-C:\WINDOWS\System32\IMM32.dll:IMM32.dll (00007FFFF8890000), size: 192512 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.4484
-C:\WINDOWS\SYSTEM32\OPENGL32.dll:OPENGL32.dll (00007FFF4AEC0000), size: 1097728 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.5074
-C:\WINDOWS\SYSTEM32\GLU32.dll:GLU32.dll (00007FFF4AE90000), size: 184320 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.1150
-C:\WINDOWS\System32\SETUPAPI.dll:SETUPAPI.dll (00007FFFF8960000), size: 4751360 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6725
-C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL:IPHLPAPI.DLL (00007FFFF60A0000), size: 212992 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6725
-C:\WINDOWS\System32\OLEAUT32.dll:OLEAUT32.dll (00007FFFF94C0000), size: 880640 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6725
-C:\WINDOWS\SYSTEM32\dxcore.dll:dxcore.dll (00007FFFF4D70000), size: 278528 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6725
-C:\WINDOWS\System32\WINTRUST.dll:WINTRUST.dll (00007FFFF8760000), size: 520192 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6899
-C:\WINDOWS\SYSTEM32\WINHTTP.dll:WINHTTP.dll (00007FFFF6910000), size: 1175552 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6725
-C:\WINDOWS\SYSTEM32\WINMM.dll:WINMM.dll (00007FFFE8430000), size: 217088 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.5074
-C:\WINDOWS\SYSTEM32\bcrypt.dll:bcrypt.dll (00007FFFF7B40000), size: 155648 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6899
-C:\WINDOWS\SYSTEM32\HID.DLL:HID.DLL (00007FFFF5F50000), size: 61440 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.1150
-C:\WINDOWS\SYSTEM32\dwmapi.dll:dwmapi.dll (00007FFFF4F20000), size: 184320 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6899
-C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\SketchUpAPI.dll:SketchUpAPI.dll (00007FFF0AB80000), size: 8990720 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 23.0.0.0
-C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\NativeProxyHelper.dll:NativeProxyHelper.dll (00007FFF38B00000), size: 1789952 (result: 0), SymType: '-deferred-', PDB: ''
-C:\WINDOWS\SYSTEM32\VERSION.dll:VERSION.dll (00007FFFF0B80000), size: 45056 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.1150
-C:\WINDOWS\SYSTEM32\WSOCK32.dll:WSOCK32.dll (00007FFFC6700000), size: 40960 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.1
-C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\SketchUpCommonPreferences.dll:SketchUpCommonPreferences.dll (00007FFF542E0000), size: 499712 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 23.0.0.0
-C:\WINDOWS\SYSTEM32\Secur32.dll:Secur32.dll (00007FFFF4C20000), size: 53248 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.1
-C:\WINDOWS\SYSTEM32\SSPICLI.DLL:SSPICLI.DLL (00007FFFF6CC0000), size: 299008 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6725
-C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\OpenRL.dll:OpenRL.dll (000002215B660000), size: 12779520 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.5.0.2907
-C:\WINDOWS\SYSTEM32\MSVCR100.dll:MSVCR100.dll (0000000074FE0000), size: 860160 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.40219.325
-C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\embree.dll:embree.dll (00007FFF08E70000), size: 16711680 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2.14.0.0
-C:\WINDOWS\SYSTEM32\MSVCP100.dll:MSVCP100.dll (0000000074F40000), size: 622592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.40219.325
-C:\WINDOWS\SYSTEM32\cfgmgr32.DLL:cfgmgr32.DLL (00007FFFF78F0000), size: 356352 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.4202
-C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\tbb.dll:tbb.dll (00007FFF576B0000), size: 413696 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2017.0.2016.1004
-C:\WINDOWS\SYSTEM32\MSVCR120.dll:MSVCR120.dll (00007FFF3A3C0000), size: 978944 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 12.0.21005.1
-C:\WINDOWS\SYSTEM32\MSWSOCK.DLL:MSWSOCK.DLL (00007FFFF6F90000), size: 438272 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6725
-C:\WINDOWS\SYSTEM32\MSVCP120.dll:MSVCP120.dll (00007FFF52F10000), size: 679936 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 12.0.21005.1
-C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\OpenRL_pthread.dll:OpenRL_pthread.dll (000002215C2B0000), size: 61440 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2.9.0.0
-C:\WINDOWS\SYSTEM32\MSASN1.dll:MSASN1.dll (00007FFFF73E0000), size: 77824 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6899
-C:\WINDOWS\System32\bcryptprimitives.dll:bcryptprimitives.dll (00007FFFF87F0000), size: 622592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6899
-C:\WINDOWS\SYSTEM32\kernel.appcore.dll:kernel.appcore.dll (00007FFFF68F0000), size: 110592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6725
-C:\WINDOWS\system32\uxtheme.dll:uxtheme.dll (00007FFFF4C90000), size: 696320 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6725
-C:\WINDOWS\SYSTEM32\windows.storage.dll:windows.storage.dll (00007FFFF56B0000), size: 8769536 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6899
-C:\WINDOWS\System32\SHCORE.dll:SHCORE.dll (00007FFFFA200000), size: 991232 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6899
-C:\WINDOWS\SYSTEM32\profapi.dll:profapi.dll (00007FFFF7B70000), size: 167936 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.4768
-C:\Program Files\Manufacturer\Endpoint Agent\prntm64.dll:prntm64.dll (00007FFFC9290000), size: 413696 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 16.0.20003.60193
-C:\WINDOWS\SYSTEM32\WINSPOOL.DRV:WINSPOOL.DRV (00007FFFE24E0000), size: 724992 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6725
-C:\WINDOWS\system32\IconCodecService.dll:IconCodecService.dll (00007FFFD44D0000), size: 45056 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.1
-C:\WINDOWS\SYSTEM32\WindowsCodecs.dll:WindowsCodecs.dll (00007FFFF31C0000), size: 2293760 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6899
-C:\WINDOWS\System32\clbcatq.dll:clbcatq.dll (00007FFFFA380000), size: 724992 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2001.12.10941.16384
-C:\WINDOWS\System32\netprofm.dll:netprofm.dll (00007FFFF19B0000), size: 442368 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.5074
-C:\WINDOWS\System32\npmproxy.dll:npmproxy.dll (00007FFFEF9B0000), size: 102400 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.1150
-C:\WINDOWS\System32\NSI.dll:NSI.dll (00007FFFFA870000), size: 40960 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6899
-C:\WINDOWS\SYSTEM32\dhcpcsvc6.DLL:dhcpcsvc6.DLL (00007FFFF17A0000), size: 122880 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6899
-C:\WINDOWS\SYSTEM32\dhcpcsvc.DLL:dhcpcsvc.DLL (00007FFFF1680000), size: 143360 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6899
-C:\WINDOWS\SYSTEM32\DNSAPI.dll:DNSAPI.dll (00007FFFF60E0000), size: 1204224 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6725
-C:\WINDOWS\system32\napinsp.dll:napinsp.dll (00007FFFD6F40000), size: 98304 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.1150
-C:\WINDOWS\System32\winrnr.dll:winrnr.dll (00007FFFD6F60000), size: 73728 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.1882
-C:\WINDOWS\system32\nlansp_c.dll:nlansp_c.dll (00007FFFD6F80000), size: 163840 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6725
-C:\WINDOWS\system32\wshbth.dll:wshbth.dll (00007FFFEF710000), size: 90112 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.5074
-C:\WINDOWS\System32\fwpuclnt.dll:fwpuclnt.dll (00007FFFF1A20000), size: 548864 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6725
-C:\Windows\System32\rasadhlp.dll:rasadhlp.dll (00007FFFED5A0000), size: 45056 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6584
-C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\NVUnityPlugin.DLL:NVUnityPlugin.DLL (00007FFF366F0000), size: 1519616 (result: 0), SymType: '-deferred-', PDB: ''
-C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\Data\Tools\astcenc-avx2.dll:astcenc-avx2.dll (00007FFF510B0000), size: 540672 (result: 0), SymType: '-deferred-', PDB: ''
-C:\WINDOWS\System32\MMDevApi.dll:MMDevApi.dll (00007FFFF0640000), size: 622592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6725
-C:\WINDOWS\System32\DEVOBJ.dll:DEVOBJ.dll (00007FFFF78C0000), size: 184320 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.1150
-C:\WINDOWS\SYSTEM32\d3d11.dll:d3d11.dll (00007FFFF3CB0000), size: 2498560 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6725
-C:\WINDOWS\SYSTEM32\dxgi.dll:dxgi.dll (00007FFFF4DC0000), size: 1290240 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6725
-C:\WINDOWS\SYSTEM32\powrprof.dll:powrprof.dll (00007FFFF7510000), size: 385024 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.3912
-C:\WINDOWS\SYSTEM32\UMPDC.dll:UMPDC.dll (00007FFFF74A0000), size: 81920 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.1301
-C:\WINDOWS\SYSTEM32\directxdatabasehelper.dll:directxdatabasehelper.dll (00007FFFF1BC0000), size: 405504 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6725
-C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispig.inf_amd64_0afec3f2050014a0\nvldumdx.dll:nvldumdx.dll (00007FFFF04B0000), size: 790528 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 32.0.15.6094
-C:\WINDOWS\SYSTEM32\cryptnet.dll:cryptnet.dll (00007FFFF0210000), size: 241664 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.3624
-C:\WINDOWS\SYSTEM32\cryptbase.dll:cryptbase.dll (00007FFFF7240000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6899
-C:\WINDOWS\SYSTEM32\wldp.dll:wldp.dll (00007FFFF7370000), size: 413696 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6899
-C:\WINDOWS\SYSTEM32\drvstore.dll:drvstore.dll (00007FFFEFE00000), size: 1527808 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6725
-C:\WINDOWS\System32\imagehlp.dll:imagehlp.dll (00007FFFFA120000), size: 131072 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.4202
-C:\WINDOWS\SYSTEM32\CRYPTSP.dll:CRYPTSP.dll (00007FFFF7250000), size: 110592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6899
-C:\WINDOWS\system32\rsaenh.dll:rsaenh.dll (00007FFFF6850000), size: 241664 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6725
-C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispig.inf_amd64_0afec3f2050014a0\nvgpucomp64.dll:nvgpucomp64.dll (00007FFFED720000), size: 33480704 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 32.0.15.6094
-C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispig.inf_amd64_0afec3f2050014a0\Display.NvContainer\NvMessageBus.dll:NvMessageBus.dll (00007FFFE1610000), size: 3506176 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 3.12.3354.5005
-C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispig.inf_amd64_0afec3f2050014a0\nvwgf2umx.dll:nvwgf2umx.dll (00007FFFE8490000), size: 68272128 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 32.0.15.6094
-C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispig.inf_amd64_0afec3f2050014a0\nvppex.dll:nvppex.dll (00007FFFB6F40000), size: 1396736 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 32.0.15.6094
-C:\WINDOWS\system32\wbem\wbemprox.dll:wbemprox.dll (00007FFFE31D0000), size: 73728 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6725
-C:\WINDOWS\SYSTEM32\wbemcomn.dll:wbemcomn.dll (00007FFFE2DE0000), size: 499712 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.5074
-C:\WINDOWS\system32\wbem\wbemsvc.dll:wbemsvc.dll (00007FFFD7040000), size: 86016 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.6725
-C:\WINDOWS\system32\wbem\fastprox.dll:fastprox.dll (00007FFFDFF60000), size: 983040 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.5074
-C:\WINDOWS\SYSTEM32\amsi.dll:amsi.dll (00007FFFDD110000), size: 118784 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.5074
-C:\WINDOWS\SYSTEM32\USERENV.dll:USERENV.dll (00007FFFF7030000), size: 176128 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.2454
-C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.25100.9008-0\MpOav.dll:MpOav.dll (00007FFFDDA40000), size: 663552 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 4.18.25100.9008
-C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\cudart64_90.dll:cudart64_90.dll (00007FFF4B980000), size: 397312 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.14.11.9000
-C:\WINDOWS\SYSTEM32\opencl.dll:opencl.dll (00007FFF8D8D0000), size: 483328 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 3.0.6.0
-C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\radeonrays.dll:radeonrays.dll (00007FFF41230000), size: 557056 (result: 0), SymType: '-deferred-', PDB: ''
-C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\Data\MonoBleedingEdge\EmbedRuntime\mono-2.0-bdwgc.dll:mono-2.0-bdwgc.dll (00007FFF08410000), size: 10825728 (result: 0), SymType: '-deferred-', PDB: ''
-C:\WINDOWS\SYSTEM32\dbghelp.dll:dbghelp.dll (00007FFFE5540000), size: 2367488 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.26100.5074
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.732 seconds
+Refreshing native plugins compatible for Editor in 8.24 ms, found 3 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.528 seconds
+Domain Reload Profiling: 1253ms
+	BeginReloadAssembly (151ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (70ms)
+	LoadAllAssembliesAndSetupDomain (460ms)
+		LoadAssemblies (344ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (210ms)
+			TypeCache.Refresh (180ms)
+				TypeCache.ScanAssembly (161ms)
+			ScanForSourceGeneratedMonoScriptInfo (23ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (529ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (403ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (85ms)
+			ProcessInitializeOnLoadAttributes (258ms)
+			ProcessInitializeOnLoadMethodAttributes (32ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 6.87 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3322 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (57.1 KB). Loaded Objects now: 3784.
+Memory consumption went from 131.8 MB to 131.7 MB.
+Total: 2.721500 ms (FindLiveObjects: 0.182200 ms CreateObjectMapping: 0.090600 ms MarkObjects: 2.363600 ms  DeleteObjects: 0.084600 ms)
 
-========== OUTPUTTING STACK TRACE ==================
-
-0x00007FFFF82B804A (KERNELBASE) RaiseException
-0x00007FF75F9BB640 (Unity) EditorMonoConsole::LogToConsoleImplementation
-0x00007FF75F9BC0BD (Unity) EditorMonoConsole::LogToConsoleImplementation
-0x00007FF760674AAF (Unity) DebugStringToFilePostprocessedStacktrace
-0x00007FF76067420A (Unity) DebugStringToFile
-0x00007FF75FE60246 (Unity) RegisterAssemblyDefinition
-0x00007FF7602B0DF5 (Unity) ProcessAssemblyAssets
-0x00007FF7602B1BDF (Unity) UpdateScriptCompilationPipelineCaches
-0x00007FF7602B20A4 (Unity) WorkerInitializeAndProcessScriptChanges
-0x00007FF75FB382AC (Unity) Application::InitializeProject
-0x00007FF75FFC4525 (Unity) WinMain
-0x00007FF7613A737E (Unity) __scrt_common_main_seh
-0x00007FFFFA74E8D7 (KERNEL32) BaseThreadInitThunk
-0x00007FFFFAB4C53C (ntdll) RtlUserThreadStart
-
-========== END OF STACKTRACE ===========
-
-A crash has been intercepted by the crash handler. For call stack and other details, see the latest crash report generated in:
- * C:/Users/ehddlf/AppData/Local/Temp/Unity/Editor/Crashes
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1302120.485412 seconds.
+  path: Assets/Animator/TestWindow
+  artifactKey: Guid(f7b222f1d8c40bb49a463809df3ae355) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animator/TestWindow using Guid(f7b222f1d8c40bb49a463809df3ae355) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd237cb8efe8124718c7394259cde07b8') in 0.002200 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.545049 seconds.
+  path: Assets/JSON/Editor
+  artifactKey: Guid(6b700d54458b2824c934e039a95c468c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JSON/Editor using Guid(6b700d54458b2824c934e039a95c468c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94aaf91867c1c90b5ab8d28c67005568') in 0.000419 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.353246 seconds.
+  path: Assets/JSON/JSONObject.cs
+  artifactKey: Guid(f71819923b555d14ab64ae2044718de9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JSON/JSONObject.cs using Guid(f71819923b555d14ab64ae2044718de9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '083910c9c583cb6b28cd7e26cb5c7eb8') in 0.000482 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.151573 seconds.
+  path: Assets/JSON/LICENSE.md
+  artifactKey: Guid(d65b4117f5b5c3341947d0a81786e2cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JSON/LICENSE.md using Guid(d65b4117f5b5c3341947d0a81786e2cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83a99ea474a606eb01c8717409e82d44') in 0.008345 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.149591 seconds.
+  path: Assets/JSON/readme.md
+  artifactKey: Guid(80b692916bec1664098283aa4425e4d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JSON/readme.md using Guid(80b692916bec1664098283aa4425e4d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '791b5465d10f63c51a0774801c0e45a7') in 0.000871 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.643593 seconds.
+  path: Assets/PlayerAnim
+  artifactKey: Guid(e846551200d6e3746a7d49bc46b17136) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim using Guid(e846551200d6e3746a7d49bc46b17136) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '772ee883d22e3d41a5ebd0e5f5f0f062') in 0.000397 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.623908 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Airattack
+  artifactKey: Guid(dcf3ada5cb03a41479ea6c5028cb944e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Airattack using Guid(dcf3ada5cb03a41479ea6c5028cb944e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fec67414921b92493d1595af38f975eb') in 0.000407 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.533845 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Airattack/AirAtack.anim
+  artifactKey: Guid(0bfe90068423efd4b930dd99517211e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Airattack/AirAtack.anim using Guid(0bfe90068423efd4b930dd99517211e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96ed4c9c652b172fc025f4753bc9da5b') in 0.001088 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.382193 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Airattack/AirAttack_0.anim
+  artifactKey: Guid(b2efbd3e197e55546afe74aa4791f013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Airattack/AirAttack_0.anim using Guid(b2efbd3e197e55546afe74aa4791f013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fcec2d8a00c020f960548edf0838d97') in 0.000975 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.147240 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Airattack/AirAttack_1.anim
+  artifactKey: Guid(c644722fdbef9c44987a7b15ef7de525) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Airattack/AirAttack_1.anim using Guid(c644722fdbef9c44987a7b15ef7de525) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '113268d8678b69b215b6ea81507118ee') in 0.000983 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.166957 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Airattack/AirAttack_2.anim
+  artifactKey: Guid(df10173a1c1d7bc469677048faced6ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Airattack/AirAttack_2.anim using Guid(df10173a1c1d7bc469677048faced6ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15aed16de998229921fd9ed9a9e4a9a8') in 0.000966 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.175579 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Airattack/Cha_Ani_Airattack_1.controller
+  artifactKey: Guid(caf27feae32d85846b92e68980718663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Airattack/Cha_Ani_Airattack_1.controller using Guid(caf27feae32d85846b92e68980718663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b7e281e112287fcd47a97625c477eb6') in 0.001688 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.178136 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Airattack/Cha_Ani_Airattack_1.png
+  artifactKey: Guid(30f15d89a75b5664b837d1c5c4932c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Airattack/Cha_Ani_Airattack_1.png using Guid(30f15d89a75b5664b837d1c5c4932c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eba358ce6ab8546a72e0eb8a2dd45902') in 0.077733 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 5.328727 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Airattack/Cha_Ani_Airattack_2.png
+  artifactKey: Guid(36dfba3557b7cda4f91616ac32aee69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Airattack/Cha_Ani_Airattack_2.png using Guid(36dfba3557b7cda4f91616ac32aee69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '863e277a7c27c9b5d8375ab6f0e1abf6') in 0.023076 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.677075 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Airattack/Cha_Ani_Airattack_3.png
+  artifactKey: Guid(36397be79f3ffdc458cc635022f832b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Airattack/Cha_Ani_Airattack_3.png using Guid(36397be79f3ffdc458cc635022f832b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1266b8f1fd5f30bf6169e2c82a141484') in 0.013839 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.149579 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Airattack/Cha_Ani_Airattack_4.png
+  artifactKey: Guid(a834e768e351f9f418b7b7e9631b0ed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Airattack/Cha_Ani_Airattack_4.png using Guid(a834e768e351f9f418b7b7e9631b0ed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eeba30dea7ed900cd44992ba4e4812b') in 0.013004 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.144405 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Airattack/Cha_Ani_Airattack_5.png
+  artifactKey: Guid(77d97332434dac84a87b21638d94cffb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Airattack/Cha_Ani_Airattack_5.png using Guid(77d97332434dac84a87b21638d94cffb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '770bdbae33826e614228576545387701') in 0.012896 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.152059 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Airattack/Cha_Ani_Airattack_6.png
+  artifactKey: Guid(27637446d458c094b8d02989a32dc6e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Airattack/Cha_Ani_Airattack_6.png using Guid(27637446d458c094b8d02989a32dc6e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '041414af21add9a0e38c3865152795a3') in 0.022678 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.482262 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Airattack/Cha_Ani_Airattack_7.png
+  artifactKey: Guid(9d036ee730f66d84e9fbc2cdff24a6db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Airattack/Cha_Ani_Airattack_7.png using Guid(9d036ee730f66d84e9fbc2cdff24a6db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f306f582d62674800ff494acc4742da') in 0.014238 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.028645 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Airattack/Cha_Ani_Airattack_8.png
+  artifactKey: Guid(b75443afe03ce8648ab9c1057d219617) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Airattack/Cha_Ani_Airattack_8.png using Guid(b75443afe03ce8648ab9c1057d219617) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bfc72519c1435c5c00c917d50d919fb') in 0.013792 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.029168 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Airattack/Cha_Ani_Airattack_9.png
+  artifactKey: Guid(1d348be19e1435744b4f22bfcf41235b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Airattack/Cha_Ani_Airattack_9.png using Guid(1d348be19e1435744b4f22bfcf41235b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2300aa9cefc379d23b59f043f00494f2') in 0.012861 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.027774 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Airattack/Cha_Ani_Airattack_10.png
+  artifactKey: Guid(28134af4b5b08a247bd54ab4e75d9c11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Airattack/Cha_Ani_Airattack_10.png using Guid(28134af4b5b08a247bd54ab4e75d9c11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3ae1624a6df369da4474dd31b3d441f') in 0.021366 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.017849 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Airattack/Cha_Ani_Airattack_11.png
+  artifactKey: Guid(66943f070ac3c194e8aebbde838f3504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Airattack/Cha_Ani_Airattack_11.png using Guid(66943f070ac3c194e8aebbde838f3504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00ba084a608afd9ae567c67b99e002f0') in 0.011230 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.033045 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Airattack/Cha_Ani_Airattack_12.png
+  artifactKey: Guid(2a79761f3d884e84c83ce640ed20d490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Airattack/Cha_Ani_Airattack_12.png using Guid(2a79761f3d884e84c83ce640ed20d490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffaf5af062da28c9bd68c35530ec1f65') in 0.011843 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 8.344830 seconds.
+  path: Assets/PlayerAnim/PlayerAnim.controller
+  artifactKey: Guid(fbaab6c984f28f5498cbe1194cf5346a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/PlayerAnim.controller using Guid(fbaab6c984f28f5498cbe1194cf5346a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e9598ca23f0128be42f5d97dba1b5fd') in 0.007496 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 106
+========================================================================
+Received Import Request.
+  Time since last request: 2.938913 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Uppercut
+  artifactKey: Guid(80568fb42e8120542acb70fb9b2c929a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Uppercut using Guid(80568fb42e8120542acb70fb9b2c929a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f8ac4d304d8745467c9e8feaedad6dc') in 0.000369 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.659285 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Uppercut/Cha_Ani_Uppercut_2.png
+  artifactKey: Guid(33d18116392183645b19c58fae819db5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Uppercut/Cha_Ani_Uppercut_2.png using Guid(33d18116392183645b19c58fae819db5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d077420cbf977411d3e108fc10ee745') in 0.025370 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.473844 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Uppercut/UpperCut.anim
+  artifactKey: Guid(f58cbc467002bc64ead91c991d141853) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Uppercut/UpperCut.anim using Guid(f58cbc467002bc64ead91c991d141853) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b420936b587380f7faf6861922a7f1f9') in 0.001145 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 1.479310 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Airdeath
+  artifactKey: Guid(b945291d39681ab4ca7c693c0cdd86d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Airdeath using Guid(b945291d39681ab4ca7c693c0cdd86d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f12b4ff8b04d4d43b4173058c082a023') in 0.000452 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.690646 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Airdeath/Cha_Ani_Airdeath_2.png
+  artifactKey: Guid(dcee002ad6485734fa19cedf57b7e1b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Airdeath/Cha_Ani_Airdeath_2.png using Guid(dcee002ad6485734fa19cedf57b7e1b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '054468433598dc919b50d3c4b8d682b6') in 0.014145 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.567622 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Airdeath/Cha_Ani_Airdeath_1.png
+  artifactKey: Guid(4b34340d25b7e3e4c82380aa71984375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Airdeath/Cha_Ani_Airdeath_1.png using Guid(4b34340d25b7e3e4c82380aa71984375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4aa1d8e3fd0994b203b6ef1fe52e2d1e') in 0.023836 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.653663 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Airdameged
+  artifactKey: Guid(08454f39b7502d94b844c16988f1f110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Airdameged using Guid(08454f39b7502d94b844c16988f1f110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9589a55516629c1f04a49d76fec486b2') in 0.000396 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.933961 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Airdameged/AirDemagedEnd.anim
+  artifactKey: Guid(6500f82c53dd7934fa4a0b451ee34c81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Airdameged/AirDemagedEnd.anim using Guid(6500f82c53dd7934fa4a0b451ee34c81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efecec188562234bda8ca158204dcd80') in 0.001087 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.715431 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Airdameged/AirDamegedStart.anim
+  artifactKey: Guid(881bf684af8aaf741a66d213b9efb345) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Airdameged/AirDamegedStart.anim using Guid(881bf684af8aaf741a66d213b9efb345) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '550901155957bb6472a052dc81a1f6f6') in 0.001130 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.421030 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Airdameged/AirDamagedMiddle.anim
+  artifactKey: Guid(ca3e745c596629949a7ae5772e6a944b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Airdameged/AirDamagedMiddle.anim using Guid(ca3e745c596629949a7ae5772e6a944b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60cb546a37e52fb27cdaa45a1549727c') in 0.000862 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 2.041343 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Airdameged/Cha_Ani_Airdameged_3.png
+  artifactKey: Guid(4819e21b1368a9c488751c9632ba8a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Airdameged/Cha_Ani_Airdameged_3.png using Guid(4819e21b1368a9c488751c9632ba8a96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efead6a7ef0a1b34a4cd6b9dc1acdde5') in 0.016959 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.429210 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Airdameged/Cha_Ani_Airdameged_2.png
+  artifactKey: Guid(84c38dfb409426046a24cc382a90750e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Airdameged/Cha_Ani_Airdameged_2.png using Guid(84c38dfb409426046a24cc382a90750e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '214ac676fa3180dfcea3aa19bfff3650') in 0.014091 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 15.729786 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Attack
+  artifactKey: Guid(cc6ccbda4aa8ba446bbdd30ad618b058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Attack using Guid(cc6ccbda4aa8ba446bbdd30ad618b058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0142fcecaf48503a86092e89a97e3945') in 0.000443 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.979680 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Attack/Attack_0.anim
+  artifactKey: Guid(8f01da466689e1343be7616c190ec40c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Attack/Attack_0.anim using Guid(8f01da466689e1343be7616c190ec40c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '019f368e91f97473d804fd17e6d7fac1') in 0.001274 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 9.413660 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Attack/Attack_2.anim
+  artifactKey: Guid(5609ed87a011c1a458b9ef3d1ff38f59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Attack/Attack_2.anim using Guid(5609ed87a011c1a458b9ef3d1ff38f59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff8ddd3d8c15f573d80a98d35bb29818') in 0.001319 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 1.086579 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Damaged
+  artifactKey: Guid(2eb290f5194028a4ba77c8190058b5c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Damaged using Guid(2eb290f5194028a4ba77c8190058b5c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5387b0229b7efb8e20e099757a04b164') in 0.000389 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.153248 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Damaged/Dameged.anim
+  artifactKey: Guid(7102cae0c9563704784391380b865576) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Damaged/Dameged.anim using Guid(7102cae0c9563704784391380b865576) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '101a247f4f68cdde4f0f4d0b7d92fa1c') in 0.000953 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 1.303091 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Death
+  artifactKey: Guid(cee84034c426bc443a377c90c54ea8cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Death using Guid(cee84034c426bc443a377c90c54ea8cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a5cc95ea75ab63aa63bc2b600dac41b') in 0.000385 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.013849 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Death/Cha_Ani_Death.anim
+  artifactKey: Guid(177e180e7e3cd0f4b8138d55238c0060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Death/Cha_Ani_Death.anim using Guid(177e180e7e3cd0f4b8138d55238c0060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95e5bba3b8ed8ec9745d88a97f0fc388') in 0.000968 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 1.804508 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_DoubleJump
+  artifactKey: Guid(b7afacf25fa73ea48a02204e5c993ea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_DoubleJump using Guid(b7afacf25fa73ea48a02204e5c993ea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e4adb26d51ee0a2cd77138b5dc7fafb') in 0.000469 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.755893 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_DoubleJump/Cha_Ani_Doublejump_5.png
+  artifactKey: Guid(251745c2583ac0b4b968651d55e554cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_DoubleJump/Cha_Ani_Doublejump_5.png using Guid(251745c2583ac0b4b968651d55e554cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd430b7d1429ebd8559f6eaf0ded7651') in 0.013595 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.298476 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_DoubleJump/DoubleJump.anim
+  artifactKey: Guid(2e7276ff0dde5aa44bdd3c8f9b5b0ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_DoubleJump/DoubleJump.anim using Guid(2e7276ff0dde5aa44bdd3c8f9b5b0ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bfe72793532f4e9991e41f5a28ab4d1') in 0.001125 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 1.068007 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Fall
+  artifactKey: Guid(d0fb338c2b5b9da43aa7f10b4d88d646) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Fall using Guid(d0fb338c2b5b9da43aa7f10b4d88d646) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f7a2f1c15dc34586c84fcc75de3f101') in 0.000374 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.020214 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Fall/Fall.anim
+  artifactKey: Guid(d65d67721c6c6244da215093473ddc8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Fall/Fall.anim using Guid(d65d67721c6c6244da215093473ddc8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '605d222c4262d6a798a1021c86437c16') in 0.000958 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.866364 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Healing
+  artifactKey: Guid(95818e109f89ca341b6ad4be13baab7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Healing using Guid(95818e109f89ca341b6ad4be13baab7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '920be83298d14c8e71bc4f2cd18dad12') in 0.000544 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.134747 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Healing/Healing.anim
+  artifactKey: Guid(d79dbad0c38bab0439c736f40a459659) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Healing/Healing.anim using Guid(d79dbad0c38bab0439c736f40a459659) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fce9ed642782572a087db91ed25bd10d') in 0.001015 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.854547 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Idle
+  artifactKey: Guid(ec46b71a155e5054f86b16030b6c5fec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Idle using Guid(ec46b71a155e5054f86b16030b6c5fec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe89b7089545463640d9730766c77d91') in 0.000473 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.920598 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Idle/Idle.anim
+  artifactKey: Guid(8785295226463c14c819b4192305f8d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Idle/Idle.anim using Guid(8785295226463c14c819b4192305f8d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ae913c78ec24f4e7a5959aa86f882d1') in 0.001011 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 1.021604 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Jump
+  artifactKey: Guid(99cf20d5da6ce3d42a3212fd2ac1a3d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Jump using Guid(99cf20d5da6ce3d42a3212fd2ac1a3d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65244d81f3b999de4c423f807cac50ae') in 0.000408 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.661160 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Jump/Jump.anim
+  artifactKey: Guid(9b8f57a70e8b0254395c6578fab782c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Jump/Jump.anim using Guid(9b8f57a70e8b0254395c6578fab782c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a06058ebecc6d12b909af4a03d71cbf') in 0.000904 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 1.018221 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Move
+  artifactKey: Guid(107ba4919bca60d4783fd446b2b80820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Move using Guid(107ba4919bca60d4783fd446b2b80820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c32fdec500b973d6f8316ae85f9b7ab') in 0.000379 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.775181 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Move/Move.anim
+  artifactKey: Guid(a0ee2da61b082bb4288ba7a148d897cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Move/Move.anim using Guid(a0ee2da61b082bb4288ba7a148d897cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27e226bf3c4e4888a8f5d1522271c334') in 0.001022 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.865664 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Skill
+  artifactKey: Guid(90662833490b9c44185df93f2cc1f991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Skill using Guid(90662833490b9c44185df93f2cc1f991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8017df55426f1ae3b8ef63f02ebbbcb') in 0.000392 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.007209 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Skill/Skill.anim
+  artifactKey: Guid(4d4ff20dabe67de459ad48601d8a59b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Skill/Skill.anim using Guid(4d4ff20dabe67de459ad48601d8a59b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7692482fe2038f86d82211ef1b30f096') in 0.000950 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.757548 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Start
+  artifactKey: Guid(04b852fce541c6e42b5c8be1668d5db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Start using Guid(04b852fce541c6e42b5c8be1668d5db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d35c37fc167dc0315139e17647ff295') in 0.000383 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.960055 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Start/Start.anim
+  artifactKey: Guid(4e9eaef80c74be142b11fa304bb54033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Start/Start.anim using Guid(4e9eaef80c74be142b11fa304bb54033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99998904cbc2dc5eddedf51f3975daaa') in 0.001021 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 2.282225 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Victory
+  artifactKey: Guid(afb4858cdabc5b944a6d767da0d4ee51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Victory using Guid(afb4858cdabc5b944a6d767da0d4ee51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7950bd0a697257f61f61827952b34761') in 0.000373 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.089585 seconds.
+  path: Assets/PlayerAnim/Cha_Ani_Victory/Victory.anim
+  artifactKey: Guid(33335b1012aed05429f5e28008cf80b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerAnim/Cha_Ani_Victory/Victory.anim using Guid(33335b1012aed05429f5e28008cf80b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c26dc966aa681e9130ebc2f5f56bdf47') in 0.000970 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 11.022360 seconds.
+  path: Assets/Animator/UI
+  artifactKey: Guid(14d3d61f87318334abdb70e914af2413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animator/UI using Guid(14d3d61f87318334abdb70e914af2413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77919523cd687ae6caaa9e4cc4cb81c3') in 0.000360 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.705544 seconds.
+  path: Assets/Animator/Default_Animator.controller
+  artifactKey: Guid(8066d3ea61baf1844838a889a0546371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animator/Default_Animator.controller using Guid(8066d3ea61baf1844838a889a0546371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28a18d8c5f1d8a342128bd4d157ea03f') in 0.001249 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 38.724791 seconds.
+  path: Assets/Art
+  artifactKey: Guid(5b436a8bd2299ef429cb7626f32e8c26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art using Guid(5b436a8bd2299ef429cb7626f32e8c26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae4e0ceb42ae4e3b7999da7dede9e807') in 0.000403 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 4.985004 seconds.
+  path: Assets/Art/Image
+  artifactKey: Guid(b74f02e65c0cdbe468bff9202c0a5c4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Image using Guid(b74f02e65c0cdbe468bff9202c0a5c4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cff5045ba4a8d54c561eb56bca7700ae') in 0.000366 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 13.665776 seconds.
+  path: Assets/Art/Image/Player
+  artifactKey: Guid(33678ff0a38a1584cb270340d7621f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Image/Player using Guid(33678ff0a38a1584cb270340d7621f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d5c82cefaef94243a92261251611b8e') in 0.000365 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0

@@ -26,7 +26,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\Assembly-CSharp\</OutputPath>
-    <DefineConstants>UNITY_2022_3_24;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_INITIALIZES_MEMORY_MANAGER_EXPLICITLY;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;FISHNET;FISHNET_V4;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_2022_3_24;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_INITIALIZES_MEMORY_MANAGER_EXPLICITLY;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;FISHNET;FISHNET_V4;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169,0649</NoWarn>
@@ -43,54 +43,38 @@
   <ItemGroup>
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
-    <Analyzer Include="C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Assets\FishNet\Runtime\Plugins\CodeAnalysis\FishNet.CodeAnalysis.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\DataTable\InitializationTable.cs" />
     <Compile Include="Assets\Script\Util\UiUtil.cs" />
-    <Compile Include="Assets\Script\UIAnimTool\Clip\ScaleClip.cs" />
     <Compile Include="Assets\Script\UnityUtil\CustomToggle.cs" />
+    <Compile Include="Assets\JSON\JSONObject.cs" />
     <Compile Include="Assets\Script\Util\DebugEx.cs" />
     <Compile Include="Assets\Script\Manager\BaseManager.cs" />
     <Compile Include="Assets\Script\UnityUtil\CustomInput.cs" />
     <Compile Include="Assets\JSON\VectorTemplates.cs" />
     <Compile Include="Assets\Script\DataTable\LoadData\BaseTable.cs" />
-    <Compile Include="Assets\Script\UIAnimTool\DeltaTime.cs" />
-    <Compile Include="Assets\Script\UIAnimTool\UIAnimTimeLineWindow.cs" />
+    <Compile Include="Assets\Script\UI\Popup\DefaultPopup\DefaultPopup.cs" />
+    <Compile Include="Assets\Script\UnityUtil\CustomButton.cs" />
+    <Compile Include="Assets\Script\Manager\UIManager.cs" />
+    <Compile Include="Assets\Script\Manager\AddressableManager.cs" />
+    <Compile Include="Assets\Script\Util\GameObjectExtensions.cs" />
+    <Compile Include="Assets\Script\DataTable\Data\BaseData.cs" />
     <Compile Include="Assets\Script\DataTable\CharacterTable.cs" />
+    <Compile Include="Assets\Script\UI\ToastMessage\ToastMessage.cs" />
     <Compile Include="Assets\Script\Manager\GameManager.cs" />
     <Compile Include="Assets\Script\UnityUtil\CustomToggleGroup.cs" />
+    <Compile Include="Assets\Script\Manager\NetworkManager.cs" />
     <Compile Include="Assets\Script\Manager\TableManager.cs" />
     <Compile Include="Assets\Script\Manager\DBManager.cs" />
     <Compile Include="Assets\Script\UI\Window\TestWindow\TestUI.cs" />
     <Compile Include="Assets\Script\UI\BaseUI.cs" />
-    <Compile Include="Assets\FishNet\Upgrading\UpgradeFromMirrorMenu.cs" />
-    <Compile Include="Assets\Script\Manager\ManagerGroup.cs" />
-    <Compile Include="Assets\Script\UIAnimTool\Clip\PositionClip.cs" />
-    <Compile Include="Assets\Script\DB\BaseDB.cs" />
-    <Compile Include="Assets\Script\Manager\SceneManager.cs" />
-    <Compile Include="Assets\PlayerControllerTest.cs" />
-    <Compile Include="Assets\Script\UIAnimTool\UiAnimatorEditor.cs" />
-    <Compile Include="Assets\Script\UIAnimTool\Draw\BasicDraw.cs" />
-    <Compile Include="Assets\Script\UIAnimTool\Clip\RotationClip.cs" />
-    <Compile Include="Assets\JSON\JSONObject.cs" />
-    <Compile Include="Assets\Script\UnityUtil\CustomButton.cs" />
-    <Compile Include="Assets\Script\Manager\UIManager.cs" />
-    <Compile Include="Assets\Script\Manager\AddressableManager.cs" />
-    <Compile Include="Assets\Script\UIAnimTool\UiAnimator.cs" />
-    <Compile Include="Assets\Script\DataTable\Data\BaseData.cs" />
-    <Compile Include="Assets\Script\Manager\NetworkManager.cs" />
-    <Compile Include="Assets\Script\UIAnimTool\Clip\Clip.cs" />
-    <Compile Include="Assets\FishNet\Upgrading\EdgegapMenu.cs" />
     <Compile Include="Assets\Script\Util\DefineUtil.cs" />
     <Compile Include="Assets\Script\UnityUtil\CustomScrollView.cs" />
-    <Compile Include="Assets\Script\UIAnimTool\Clip\ActiveClip.cs" />
-    <Compile Include="Assets\Script\UIAnimTool\DrawAnimTimeLine.cs" />
-    <Compile Include="Assets\FishNet\Upgrading\MirrorUpgrade.cs" />
-    <None Include="Assets\FishNet\LICENSE.txt" />
-    <None Include="Assets\FishNet\package.json" />
+    <Compile Include="Assets\Script\Manager\ManagerGroup.cs" />
+    <Compile Include="Assets\Script\DB\BaseDB.cs" />
+    <Compile Include="Assets\Script\Manager\SceneManager.cs" />
     <None Include="Assets\TableData\Resources\Table\CharacterTableData.json" />
-    <None Include="Assets\FishNet\DOCUMENTATION.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -341,19 +325,16 @@
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\PackageCache\com.unity.services.wire@1.2.5\Plugins\websocket-sharp.dll</HintPath>
-    </Reference>
-    <Reference Include="FishNet.CodeAnalysis">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Assets\FishNet\Runtime\Plugins\CodeAnalysis\FishNet.CodeAnalysis.dll</HintPath>
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\PackageCache\com.unity.services.wire@1.2.5\Plugins\websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="ReportGeneratorMerged">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\PackageCache\com.unity.testtools.codecoverage@1.2.5\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\PackageCache\com.unity.testtools.codecoverage@1.2.5\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\PackageCache\com.unity.visualscripting@1.9.2\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\PackageCache\com.unity.visualscripting@1.9.2\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -721,150 +702,134 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.24f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Services.Core">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Services.Multiplay">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.Services.Multiplay.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Flow">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Services.Core.Environments">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Services.Core.Analytics">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Toolchain.Win-x86_64-Linux-x86_64">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.Toolchain.Win-x86_64-Linux-x86_64.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Services.Multiplay.Editor">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.Services.Multiplay.Editor.dll</HintPath>
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.Services.Multiplay.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Sysroot.Linux_x86_64">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.Sysroot.Linux_x86_64.dll</HintPath>
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.Sysroot.Linux_x86_64.dll</HintPath>
     </Reference>
     <Reference Include="Unity.EditorCoroutines.Editor">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UniTask.TextMeshPro">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\UniTask.TextMeshPro.dll</HintPath>
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\UniTask.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Services.Authentication.Editor.Shared">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.Services.Authentication.Editor.Shared.dll</HintPath>
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.Services.Authentication.Editor.Shared.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UniTask.DOTween">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\UniTask.DOTween.dll</HintPath>
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UniTask.Addressables">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\UniTask.Addressables.dll</HintPath>
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\UniTask.Addressables.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask.DOTween">
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\UniTask.DOTween.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core">
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Multiplay">
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.Services.Multiplay.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core.Editor">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UniTask.Linq">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\UniTask.Linq.dll</HintPath>
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\UniTask.Linq.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Services.Multiplay.Sqp">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.Services.Multiplay.Sqp.dll</HintPath>
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.Services.Multiplay.Sqp.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow">
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Services.Core.Components">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.Services.Core.Components.dll</HintPath>
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.Services.Core.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Environments">
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.SysrootPackage.Editor">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.SysrootPackage.Editor.dll</HintPath>
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.SysrootPackage.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Services.Matchmaker">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.Services.Matchmaker.dll</HintPath>
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.Services.Matchmaker.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Services.Authentication">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.Services.Authentication.dll</HintPath>
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.Services.Authentication.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Services.Authentication.PlayerAccounts">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.Services.Authentication.PlayerAccounts.dll</HintPath>
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.Services.Authentication.PlayerAccounts.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Analytics">
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UniTask">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\UniTask.dll</HintPath>
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\UniTask.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
-      <HintPath>C:\Users\ehddl\OneDrive\문서\Unity\MainGame\MainGame\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Toolchain.Win-x86_64-Linux-x86_64">
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.Toolchain.Win-x86_64-Linux-x86_64.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>C:\UnityProject\HighCore\MainGame\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="GameKit.Dependencies.csproj">
-      <Project>{025892ed-3f69-cc7e-0af4-f5fd94c4d27c}</Project>
-      <Name>GameKit.Dependencies</Name>
-    </ProjectReference>
-    <ProjectReference Include="FishNet.Codegen.Cecil.csproj">
-      <Project>{92c40278-ec01-435f-5a00-74186bf382e7}</Project>
-      <Name>FishNet.Codegen.Cecil</Name>
-    </ProjectReference>
-    <ProjectReference Include="FishNet.Demos.csproj">
-      <Project>{30cfb465-69a2-32c0-8bd4-5de21bab4af2}</Project>
-      <Name>FishNet.Demos</Name>
-    </ProjectReference>
-    <ProjectReference Include="FishNet.Runtime.csproj">
-      <Project>{312da08c-e5f2-6b4d-b2d1-0127677f6365}</Project>
-      <Name>FishNet.Runtime</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
